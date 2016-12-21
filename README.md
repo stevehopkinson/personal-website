@@ -1,2 +1,2 @@
-# personal-website
-Personal website at stevehopkinson.co.uk
+# Personal website
+Source code for [Steve Hopkinson's personal website](http://www.stevehopkinson.co.uk).
