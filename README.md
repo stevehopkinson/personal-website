@@ -14,3 +14,6 @@ Source code for [Steve Hopkinson's personal website](http://www.stevehopkinson.c
 - For continuous deployment, use Travis, with automated deployment to a Heroku server if a build is successful.
 - For version control and source code management, use Git to manage local repositories and GitHub to manage remote repositories.
 - To ensure that code syntax is consistent, use ESLint in the semistandard configuration.
+
+## Links and references
+- https://www.devonstank.com/
