@@ -1,3 +1,5 @@
+![Build status](https://travis-ci.org/stevehopkinson/personal-website.svg?branch=master)
+
 # Personal website
 Source code for [Steve Hopkinson's personal website](http://www.stevehopkinson.co.uk).
 
