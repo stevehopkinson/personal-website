@@ -2,9 +2,10 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Personal website for Steve Hopkinson",
-  "main": "index.js",
+  "main": "node ./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape ./tests/index.test.js",
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "tape-catch": "^1.0.6"
   }
 }
