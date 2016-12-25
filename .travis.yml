@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - 6.1
 before_install:
-  - pip install --user codecov
+  - npm install -g codecov
 after_success:
-  - codecov --file coverage/lcov.info --disable search
+  - istanbul cover ./tests/index.test.js --report lcovonly -- -R spec
+  - codecov
