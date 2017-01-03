@@ -1,4 +1,5 @@
 ![Build status](https://travis-ci.org/stevehopkinson/personal-website.svg?branch=master)
+![codecov](https://codecov.io/gh/stevehopkinson/personal-website/branch/master/graph/badge.svg)
 
 # Personal website
 Source code for [Steve Hopkinson's personal website](http://www.stevehopkinson.co.uk).
