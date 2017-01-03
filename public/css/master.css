@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 100%;
+  background-color: #333333; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background: #333333;
+  height: 90px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 20;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3); }
+
+.header--name {
+  color: #CCCCCC;
+  display: block;
+  float: left;
+  padding-left: 50px;
+  font-size: 2rem;
+  box-sizing: border-box;
+  height: 90px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: lowercase;
+  font-variant: small-caps; }
+
+.header--nav {
+  display: block;
+  padding-right: 50px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  float: right; }
+
+.header--link {
+  padding-left: 20px;
+  color: #ff7b00;
+  text-decoration: none;
+  transition: color 0.3s; }
+
+.header--link:hover, .section--link:hover, .contact--email:hover {
+  color: #ffaf66; }
+
+.section {
+  display: block;
+  background: white;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 100px 0; }
+
+.section:nth-of-type(even) {
+  background: #EDEDED; }
+
+.section--header {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-decoration: underline;
+  padding-bottom: 1.5rem;
+  font-weight: 800; }
+
+.section--text, .section--link, .contact--email {
+  display: inline-block;
+  max-width: 956px;
+  margin: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  opacity: 0.85;
+  line-height: 140%;
+  font-weight: regular; }
+
+.section--link, .contact--email {
+  color: #ff7b00;
+  text-decoration: none;
+  transition: color 0.3s; }
+
+.intro {
+  padding: 270px 0 130px;
+  overflow: hidden; }
+
+.intro--background {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 105%;
+  height: 105%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(http://www.remotenation.co/wp-content/uploads/2015/03/stock_desk3-1180x650.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  filter: blur(5px); }
+
+.intro--text {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  max-width: 956px;
+  margin: 0 auto;
+  font-weight: bold;
+  z-index: 10;
+  line-height: 130%; }
+
+.intro--link {
+  margin: 1.5rem;
+  display: inline-block;
+  background: #ff7b00;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 1.6rem 0.8rem 1.6rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
+  transition: opacity 0.3s; }
+
+.intro--link:hover {
+  opacity: 0.8; }
+
+.experience--logos {
+  padding-top: 1rem; }
+
+.experience--logo {
+  width: 225px;
+  height: auto;
+  padding: 1rem;
+  opacity: 0.9; }
+
+.contact--email {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem; }
+
+.footer {
+  background: #333333;
+  height: 90px;
+  width: 100%;
+  max-width: 100%; }
+
+.footer--text {
+  font-family: "Josefin Sans", sans-serif;
+  color: #888888;
+  text-align: center;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  height: 90px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.fa {
+  font-size: 2rem;
+  padding-right: 1rem; }
+
+.large-icon {
+  font-size: 3rem !important;
+  padding: 0 1rem !important; }
+
+/*# sourceMappingURL=master.css.map */
