@@ -1,0 +1,218 @@
+@import 'reset';
+
+$header-font-stack: 'Playfair Display', serif;
+$body-font-stack: 'Josefin Sans', sans-serif;
+$dark-background: #333333;
+$light-font-color: #CCCCCC;
+$footer-font-color: #888888;
+$link-color: #ff7b00;
+$link-hover-color: #ffaf66;
+$odd-section-background: white;
+$even-section-background: #EDEDED;
+$intro-image: url(http://www.remotenation.co/wp-content/uploads/2015/03/stock_desk3-1180x650.jpg);
+
+html {
+  font-size: 100%;
+  background-color: $dark-background;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background: $dark-background;
+  height: 90px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 20;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.header--name {
+  color: $light-font-color;
+  display: block;
+  float: left;
+  padding-left: 50px;
+  font-size: 2rem;
+  box-sizing: border-box;
+  height: 90px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: $body-font-stack;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+.header--nav {
+  display: block;
+  padding-right: 50px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: $body-font-stack;
+  text-transform: uppercase;
+  float: right;
+}
+
+.header--link {
+  padding-left: 20px;
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header--link:hover {
+  color: $link-hover-color;
+}
+
+.section {
+  display: block;
+  background: $odd-section-background;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 100px 0;
+}
+
+.section:nth-of-type(even) {
+  background: $even-section-background;
+}
+
+.section--header {
+  font-size: 3rem;
+  font-family: $body-font-stack;
+  font-decoration: underline;
+  padding-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.section--text {
+  display: inline-block;
+  max-width: 956px;
+  margin: 1rem;
+  font-family: $header-font-stack;
+  font-size: 2rem;
+  opacity: 0.85;
+  line-height: 140%;
+  font-weight: regular;
+}
+
+.section--link {
+  @extend .section--text;
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section--link:hover {
+  @extend .header--link:hover;
+}
+
+.intro {
+  padding: 270px 0 130px;
+  overflow: hidden;
+}
+
+.intro--background {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 105%;
+    height: 105%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: $intro-image;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.intro--text {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: $body-font-stack;
+  max-width: 956px;
+  margin: 0 auto;
+  font-weight: bold;
+  z-index: 10;
+  line-height: 130%;
+}
+
+.intro--link {
+  margin: 1.5rem;
+  display: inline-block;
+  background: $link-color;
+  font-family: $body-font-stack;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 1.6rem 0.8rem 1.6rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
+  transition: opacity 0.3s;
+}
+
+.intro--link:hover {
+  opacity: 0.8;
+}
+
+.experience--logos {
+  padding-top: 1rem;
+}
+
+.experience--logo {
+  width: 225px;
+  height: auto;
+  padding: 1rem;
+  opacity: 0.9;
+}
+
+.contact--email {
+  @extend .section--link;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  background: $dark-background;
+  height: 90px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer--text {
+  font-family: $body-font-stack;
+  color: $footer-font-color;
+  text-align: center;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  height: 90px;
+  line-height: 90px;
+  white-space: nowrap;
+  font-family: $body-font-stack;
+  font-weight: 400;
+}
+
+.fa {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.large-icon {
+  font-size: 3rem !important;
+  padding: 0 1rem !important;
+}

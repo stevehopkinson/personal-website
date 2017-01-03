@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tape ./tests/index.test.js",
     "start": "node ./src/index.js",
-    "coverage": "istanbul cover ./tests/index.test.js"
+    "coverage": "istanbul cover ./tests/index.test.js",
+    "build-css": "sass scss/master.scss public/css/master.css"
   },
   "pre-commit": [
     "test"
