@@ -62,7 +62,7 @@ html {
   color: #cccccc;
   display: block;
   float: left;
-  padding-left: 3rem;
+  padding-left: 2rem;
   font-size: 2rem;
   box-sizing: border-box;
   height: 5rem;
@@ -76,7 +76,7 @@ html {
 
 .header--nav {
   display: block;
-  padding-right: 3rem;
+  padding-right: 2rem;
   line-height: 5rem;
   white-space: nowrap;
   font-family: "Josefin Sans", sans-serif;
@@ -103,7 +103,7 @@ html {
   width: 100%;
   text-align: center;
   position: relative;
-  padding: 6.25rem 2rem;
+  padding: 6.25rem 1rem;
   box-sizing: border-box; }
 
 .section:nth-of-type(even) {
@@ -224,7 +224,7 @@ html {
   font-size: 3rem !important;
   padding: 0 1rem; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   html {
     font-size: 75%; } }
 @media screen and (max-width: 680px) {
@@ -237,3 +237,7 @@ html {
 
   .header--link {
     display: none; } }
+@media screen and (max-width: 400px) {
+  .intro {
+    padding: 10rem 0 5rem;
+    overflow: hidden; } }

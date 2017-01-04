@@ -36,7 +36,7 @@ html {
   color: $light-font-color;
   display: block;
   float: left;
-  padding-left: 3rem;
+  padding-left: 2rem;
   font-size: 2rem;
   box-sizing: border-box;
   height: $header-height;
@@ -51,7 +51,7 @@ html {
 
 .header--nav {
   display: block;
-  padding-right: 3rem;
+  padding-right: 2rem;
   line-height: $header-height;
   white-space: nowrap;
   font-family: $body-font-stack;
@@ -82,7 +82,7 @@ html {
   width: 100%;
   text-align: center;
   position: relative;
-  padding: 6.25rem 2rem;
+  padding: 6.25rem 1rem;
   box-sizing: border-box;
 }
 
@@ -226,12 +226,14 @@ html {
   padding: 0 1rem;
 }
 
-@media screen and (max-width:900px) {
+// Reduce root font size at smaller screen sizes
+@media screen and (max-width:950px) {
   html {
     font-size: 75%;
   }
 }
 
+// Reduce padding and switch navbar to hamburger menu at small screen sizes
 @media screen and (max-width:680px) {
   html {
     font-size: 65%;
@@ -242,5 +244,13 @@ html {
   }
   .header--link {
     display: none;
+  }
+}
+
+// Reduce padding on intro at very small screen sizes
+@media screen and (max-width:400px) {
+  .intro {
+    padding: 10rem 0 5rem;
+    overflow: hidden;
   }
 }
