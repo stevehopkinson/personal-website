@@ -50,7 +50,7 @@ html {
   left: 0;
   display: block;
   background: #333333;
-  height: 90px;
+  height: 5rem;
   width: 100%;
   max-width: 100%;
   z-index: 20;
@@ -59,14 +59,14 @@ html {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3); }
 
 .header--name {
-  color: #CCCCCC;
+  color: #cccccc;
   display: block;
   float: left;
-  padding-left: 50px;
+  padding-left: 3rem;
   font-size: 2rem;
   box-sizing: border-box;
-  height: 90px;
-  line-height: 90px;
+  height: 5rem;
+  line-height: 5rem;
   white-space: nowrap;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -76,15 +76,20 @@ html {
 
 .header--nav {
   display: block;
-  padding-right: 50px;
-  line-height: 90px;
+  padding-right: 3rem;
+  line-height: 5rem;
   white-space: nowrap;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   float: right; }
 
+.header--icon {
+  color: #ff7b00;
+  font-size: 2rem;
+  display: none; }
+
 .header--link {
-  padding-left: 20px;
+  padding-left: 1.25rem;
   color: #ff7b00;
   text-decoration: none;
   transition: color 0.3s; }
@@ -98,27 +103,29 @@ html {
   width: 100%;
   text-align: center;
   position: relative;
-  padding: 100px 0; }
+  padding: 6.25rem 2rem;
+  box-sizing: border-box; }
 
 .section:nth-of-type(even) {
-  background: #EDEDED; }
+  background: #ededed; }
 
 .section--header {
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
   font-decoration: underline;
   padding-bottom: 1.5rem;
-  font-weight: 800; }
+  font-weight: 800;
+  box-sizing: border-box; }
 
 .section--text, .section--link, .contact--email {
   display: inline-block;
   max-width: 956px;
-  margin: 1rem;
+  padding: 1rem;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   opacity: 0.85;
   line-height: 140%;
-  font-weight: regular; }
+  box-sizing: border-box; }
 
 .section--link, .contact--email {
   color: #ff7b00;
@@ -126,7 +133,7 @@ html {
   transition: color 0.3s; }
 
 .intro {
-  padding: 270px 0 130px;
+  padding: 17rem 0 8rem;
   overflow: hidden; }
 
 .intro--background {
@@ -156,7 +163,6 @@ html {
   font-family: "Josefin Sans", sans-serif;
   max-width: 956px;
   margin: 0 auto;
-  padding: 0 2rem;
   font-weight: bold;
   z-index: 10;
   line-height: 130%; }
@@ -194,7 +200,7 @@ html {
 
 .footer {
   background: #333333;
-  height: 90px;
+  height: 5rem;
   width: 100%;
   max-width: 100%; }
 
@@ -204,8 +210,8 @@ html {
   text-align: center;
   font-size: 1.5rem;
   box-sizing: border-box;
-  height: 90px;
-  line-height: 90px;
+  height: 5rem;
+  line-height: 5rem;
   white-space: nowrap;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -216,6 +222,18 @@ html {
 
 .large-icon {
   font-size: 3rem !important;
-  padding: 0 1rem !important; }
+  padding: 0 1rem; }
 
-/*# sourceMappingURL=master.css.map */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 75%; } }
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 65%; }
+
+  .header--icon {
+    display: inline-block;
+    padding-right: 0px !important; }
+
+  .header--link {
+    display: none; } }
