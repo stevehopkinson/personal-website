@@ -5,6 +5,6 @@ const app = express();
 
 app.use(compression());
 
-app.use(serveStatic('public', { maxAge: '1d' }));
+app.use(serveStatic('public', { maxAge: '31d' }));
 
 module.exports = app;
