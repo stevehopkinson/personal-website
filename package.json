@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/stevehopkinson/personal-website#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "serve-static": "^1.11.1"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
