@@ -249,7 +249,7 @@ html {
     width: 100%;
     clear: both;
     text-align: center;
-    padding-right: 1rem;
+    padding-left: 2rem;
     background: #333333;
     font-size: 1.5rem; } }
 @media screen and (max-width: 400px) {
