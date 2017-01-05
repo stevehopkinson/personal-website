@@ -20,7 +20,7 @@
     </nav>
   </header>
 
-  <article class="content">
+  <article class="content--container">
 
   <section class="section intro">
     <h2 class="intro--text">Hire a developer who understands your users</h2>
@@ -67,7 +67,7 @@
 
 <script type="text/javascript">
   var nav = document.querySelector('.header--nav'),
-      content = document.querySelector('#content');
+  content = document.querySelector('.content--container');
 
   nav.onclick = function () {
     if (nav.className === "header--nav") {
@@ -79,9 +79,8 @@
 
   content.onclick = function () {
     if (nav.className === "header--nav open")
-      nav.className = "header--nav";
+    nav.className = "header--nav";
   }
-
 </script>
 
 </body>
