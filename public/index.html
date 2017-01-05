@@ -13,12 +13,14 @@
   <header class="header">
     <h1 class="header--name">Steve Hopkinson</h1>
     <nav class="header--nav">
+      <a class="header--icon" href="javascript:void(0)" aria-hidden="true"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <a class="header--link" href="#about">About</a>
       <a class="header--link" href="#experience">Experience</a>
       <a class="header--link" href="#contact">Contact</a>
-      <a class="header--icon" href="javascript:void(0)" aria-hidden="true"><i class="fa fa-bars" aria-hidden="true"></i></a>
     </nav>
   </header>
+
+  <article class="content--container">
 
   <section class="section intro">
     <h2 class="intro--text">Hire a developer who understands your users</h2>
@@ -60,5 +62,26 @@
 <footer class="footer">
   <p class="footer--text">&copy; 2017 Steve Hopkinson. All rights reserved.</p>
 </footer>
+
+</article>
+
+<script type="text/javascript">
+  var nav = document.querySelector('.header--nav'),
+  content = document.querySelector('.content--container');
+
+  nav.onclick = function () {
+    if (nav.className === "header--nav") {
+      nav.className = "header--nav open";
+    } else {
+      nav.className = "header--nav";
+    }
+  }
+
+  content.onclick = function () {
+    if (nav.className === "header--nav open")
+    nav.className = "header--nav";
+  }
+</script>
+
 </body>
 </html>
